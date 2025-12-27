@@ -3,8 +3,6 @@
 // Re-export all data types
 export * from '@/data/projects';
 export * from '@/data/skills';
-export * from '@/data/experience';
-export * from '@/data/achievements';
 
 // Common types
 export interface SectionProps {
