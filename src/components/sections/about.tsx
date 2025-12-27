@@ -1,10 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { ANIMATION_VARIANTS } from "@/lib/constants";
-import { GraduationCap, MapPin, Calendar } from "lucide-react";
-import { 
-  ScrollReveal, 
+import {
+  ScrollReveal,
   GradientText
 } from "@/components/animations";
 
@@ -69,13 +69,14 @@ export function About() {
 
               {/* FLOATING IMAGE */}
               <div className="md:absolute md:-top-24 relative">
-                <div className="relative w-48 h-48 md:w-75 md:h-75 rounded-full p-[4px] bg-gradient-to-br from-primary via-purple-500 to-blue-500 shadow-2xl">
-                  <div className="rounded-full overflow-hidden w-full h-full">
+                <div className="relative w-48 h-48 md:w-75 md:h-75 rounded-full p-[4px] bg-gradient-to-br from-[var(--teal)] via-[var(--lavender)] to-[var(--teal-light)] shadow-2xl">
+                  <div className="rounded-full overflow-hidden w-full h-full relative">
 
-                    <img
+                    <Image
                       src="/me/me.png"
                       alt="Jerjen Res Pangalay"
-                      className="object-cover w-full h-full"
+                      fill
+                      className="object-cover rounded-full"
                     />
 
                   </div>

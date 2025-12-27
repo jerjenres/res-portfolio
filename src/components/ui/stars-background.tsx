@@ -1,6 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
-import React, { useState, useEffect, useRef, RefObject, useCallback } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 
 interface StarProps {
   x: number;
@@ -61,9 +61,10 @@ const canvasRef = useRef<HTMLCanvasElement | null>(null);
     };
     updateStars();
     const resizeObserver = new ResizeObserver(updateStars);
-    if (canvasRef.current) resizeObserver.observe(canvasRef.current);
+    const canvas = canvasRef.current;
+    if (canvas) resizeObserver.observe(canvas);
     return () => {
-      if (canvasRef.current) resizeObserver.unobserve(canvasRef.current);
+      if (canvas) resizeObserver.unobserve(canvas);
     };
   }, [generateStars]);
 
