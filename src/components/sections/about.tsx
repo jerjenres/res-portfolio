@@ -46,7 +46,7 @@ export function About() {
             {/* LEFT — About Text */}
             <div className="space-y-6 text-lg leading-relaxed">
               <p>
-                Hi! I'm Jerjen Res Pangalay, currently a 4th Year BSIT Student at Cebu Institute of Technology - University.
+                Hi! I am Jerjen Res Pangalay, currently a 4th Year BSIT Student at Cebu Institute of Technology - University.
                 With a strong interest in technology and full-stack development, I love creating impactful
                 solutions and digital experiences that make a real difference.
               </p>
@@ -58,8 +58,8 @@ export function About() {
               </p>
 
               <p>
-                I'm committed to continuous learning and staying updated with the latest technologies
-                in web development. Whether it's building responsive web applications or designing
+                I am committed to continuous learning and staying updated with the latest technologies
+                in web development. Whether it is building responsive web applications or designing
                 intuitive user interfaces, I strive to deliver high-quality solutions that exceed expectations.
               </p>
             </div>
