@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  srcDir: 'src',
   reactStrictMode: true,
   images: {
     domains: ['localhost'],
