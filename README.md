@@ -11,11 +11,13 @@ npm install
 # Run development server
 npm run dev
 
+http://localhost:3000
+
 # Build for production
 npm run build
 ```
 
-http://localhost:3000
+
 
 ## 🛠 Tech Stack
 
